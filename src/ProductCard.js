@@ -1,17 +1,32 @@
 import React from "react";
-import "./ProductCard.css";
 import { Icon } from "antd";
+import SelectOptions from "./SelectOptions";
+import "./ProductCard.css";
 
 const link =
   "https://assets.myntassets.com/h_480,q_100,w_360/v1/assets/images/7713774/2018/11/27/2fb59bfa-0e42-443c-a201-58429f49e32f1543317173496-Clarks-Men-Tan-Sneakers-7531543317172788-1.jpg";
 
 const AttributeComponent = () => (
   <>
-    <h1>Choose a Size</h1>
-    <p>
-      SomeSome contnetSome contnetSome contnetSome contnetSome contnetSome
-      contnet contnet
-    </p>
+    <div className="attribute-selector-header">
+      <div className="attribute-selector heading">Select a Size</div>
+      <div className="attribute-selector-close">
+        <Icon type="close" />
+      </div>
+    </div>
+    <div
+      style={{
+        overflowY: "scroll",
+        height: 130,
+        marginLeft: "36%",
+        paddingTop: 14
+      }}
+    >
+      <SelectOptions
+        defaultSelected={0}
+        options={["Large", "Medium", "Small"]}
+      />
+    </div>
   </>
 );
 

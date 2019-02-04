@@ -127,6 +127,25 @@ a:active {
   font-size: 14px;
 }
 
+.attribute-selector-header {
+  border-bottom: solid 1px #d5d6d9;
+  border-top: solid 1px #d5d6d9;
+  padding: 10px;
+}
+
+.attribute-selector-heading {
+  font-size: 16px;
+  color: #29303f;
+}
+
+.attribute-selector-close {
+  position: absolute;
+  top: 13px;
+  right: 15px;
+  cursor: pointer;
+  opacity: 0.7;
+}
+
 .item-details-strike {
   text-decoration: line-through;
 }
