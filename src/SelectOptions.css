@@ -1,7 +1,11 @@
 .modal-items {
-    cursor: pointer;
+  cursor: pointer;
+}
+
+.modal-items:hover {
+  font-weight: bold;
 }
 
 .selected {
-    font-weight: bold;
+  font-weight: bold;
 }

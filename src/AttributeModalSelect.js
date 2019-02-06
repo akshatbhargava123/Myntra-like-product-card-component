@@ -2,7 +2,12 @@ import React from "react";
 import { Modal } from "antd";
 import SelectOptions from "./SelectOptions";
 
-const AttributeModalSelect = ({ isOpen, onValueSelect, options }) => {
+const AttributeModalSelect = ({
+  isOpen,
+  onValueSelect,
+  options,
+  focusOnHover
+}) => {
   const [visible, updateVisible] = React.useState(isOpen);
   React.useEffect(() => {
     updateVisible(isOpen);
@@ -23,6 +28,7 @@ const AttributeModalSelect = ({ isOpen, onValueSelect, options }) => {
         defaultSelected={1}
         options={options}
         onSelect={onSelectHandler}
+        focusOnHover={focusOnHover}
       />
     </Modal>
   );
